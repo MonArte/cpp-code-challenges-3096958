@@ -15,7 +15,18 @@ int main(){
     std::cout << "Enter a positive integer: " << std::flush;
     std::cin >> n;
 
-    // Write your code here
+    for (size_t i = 1; i <= n; ++i) {
+        if (!(i%15)) {
+            std::cout << "FizzBuzz " << std::flush;
+        } else if (!(i%5)) {
+            std::cout << "Buzz " << std::flush;
+        }  else if (!(i%3)) {
+            std::cout << "Fizz " << std::flush;
+        } else {
+            std::printf("%d ", i); std::cout << std::flush;
+        }
+    }
+    
     
     std::cout << std::endl << std::flush;
     return 0;
