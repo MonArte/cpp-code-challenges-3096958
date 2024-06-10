@@ -2,7 +2,8 @@
 
 // Challenge #12: Age in Days Calculator
 // Write an application that asks the user's birth date and responds with the user's age in days. 
-// If the user claims to be over 120 years old, output a message calling the bluff.
+// If the user claims to be over 120 years old, output a me 
+   ssage calling the bluff.
 
 #include <iostream>
 #include <string>
