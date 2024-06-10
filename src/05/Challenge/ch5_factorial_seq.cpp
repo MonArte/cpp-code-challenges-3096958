@@ -16,9 +16,15 @@
 // Returns: n!, the last calculated factorial.
 int print_factorials(int n){
     
-    // Write your code here
-
-    return 0;
+    if (n != 0)
+    {
+        int x = (n * print_factorials(n-1));
+        printf("%d\r\n", x);
+        return x;
+    }
+    
+    printf("%d\r\n", 1);
+    return 1;
 }
 
 // Main function
