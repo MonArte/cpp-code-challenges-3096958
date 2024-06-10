@@ -15,7 +15,6 @@
 bool is_palindrome(std::string str){
 
     bool bRet;
-
     std::string temp;
 
     std::transform(str.begin(), str.end(), str.begin(),
