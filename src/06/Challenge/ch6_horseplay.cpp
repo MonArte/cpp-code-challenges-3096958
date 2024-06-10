@@ -18,7 +18,56 @@
 std::vector<std::string> knight_moves(std::string knight){
     std::vector<std::string> moves;
 
-    // Write your code here
+    int h = (knight[0] - 96);
+    int v = (knight[1] - 48);
+
+    if (v < 7) {
+        if (h < 8) {
+            moves.push_back(std::string() + (char)(h+97) + (char)(v+50));
+        }
+    }
+
+    if (v < 8) {
+        if (h < 7) {
+            moves.push_back(std::string() + (char)(h+98) + (char)(v+49));
+        }
+    }
+
+    if (v > 1) {
+        if (h < 7) {
+            moves.push_back(std::string() + (char)(h+98) + (char)(v+47));
+        }
+    }
+
+    if (v > 2) {
+        if (h < 8) {
+            moves.push_back(std::string() + (char)(h+97) + (char)(v+46));
+        }
+    }
+
+    if (v > 2) {
+        if (h > 1) {
+            moves.push_back(std::string() + (char)(h+95) + (char)(v+46));
+        }
+    }
+
+    if (v > 1) {
+        if (h > 2) {
+            moves.push_back(std::string() + (char)(h+94) + (char)(v+47));
+        }
+    }
+
+    if (v < 8) {
+        if (h > 2) {
+            moves.push_back(std::string() + (char)(h+94) + (char)(v+49));
+        }
+    }
+
+    if (v < 7) {
+        if (h > 1) {
+            moves.push_back(std::string() + (char)(h+95) + (char)(v+50));
+        }
+    }
 
     return moves;
 }
