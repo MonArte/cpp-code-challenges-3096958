@@ -16,9 +16,23 @@
 // Returns: A boolean value: True on success, false otherwise.
 bool sort_array(int *arr, int n){
 
-    // Write your code here
+    int i, j;
+    int zs;
+    
+    for (i = 0; i < (n-1); i++)
+    {
+        for (j = i+1; j < n; j++)
+        {
+            if (arr[i] > arr[j])
+            {
+                zs = arr[i];
+                arr[i] = arr[j];
+                arr[j] = zs;
+            }
+        }
+    }
 
-    return false;
+    return true;
 }
 
 // Main function
